@@ -1,4 +1,4 @@
-const CACHE = 'syr-etkety-pwa-v2';
+const CACHE = 'syr-etkety-pwa-v3';
 const FILES = [
   './', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon.svg',
   './assets/01_obr_hlavicka.png', './assets/10_obr_bok_1.png', './assets/11_obr_bok_2.png',

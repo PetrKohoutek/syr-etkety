@@ -18,15 +18,23 @@
         <div class="header-title header-title-en" id="header-en"></div>
       </div>
       <div class="language-switch" aria-label="Jazyk / Language">
-        <button type="button" class="language-button is-active" data-language="cz" aria-label="Čeština" aria-pressed="true">🇨🇿</button>
-        <button type="button" class="language-button" data-language="en" aria-label="English" aria-pressed="false">🇬🇧</button>
+        <button type="button" class="language-button is-active" data-language="cz" aria-label="Čeština" aria-pressed="true">
+          <svg class="flag-icon" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#d7141a"/><path d="M0 0 15 10 0 20Z" fill="#11457e"/></svg>
+        </button>
+        <button type="button" class="language-button" data-language="en" aria-label="English" aria-pressed="false">
+          <svg class="flag-icon" viewBox="0 0 60 30" aria-hidden="true"><defs><clipPath id="uk-flag-clip"><path d="M0 0v30h60V0z"/></clipPath></defs><g clip-path="url(#uk-flag-clip)"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="m0 0 60 30M60 0 0 30"/><path stroke="#c8102e" stroke-width="2.5" d="m0 0 60 30M60 0 0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#c8102e" stroke-width="6" d="M30 0v30M0 15h60"/></g></svg>
+        </button>
       </div>
     </header>
 
     <div class="page-layout">
       <nav class="side-menu" id="menu" aria-label="Hlavní menu">
         <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu-options">
-          <span id="menu-current"></span><span class="menu-chevron" aria-hidden="true">⌄</span>
+          <span class="menu-label">
+            <svg class="menu-hamburger" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            <span id="menu-current"></span>
+          </span>
+          <span class="menu-chevron" aria-hidden="true">⌄</span>
         </button>
         <div class="menu-options" id="menu-options"></div>
       </nav>

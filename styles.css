@@ -35,6 +35,7 @@ body { min-height: 100vh; background: var(--body); }
 .header-title-en { font-size: clamp(19px, 2.45vw, 36px); font-weight: 600; }
 .language-switch { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 .language-button { display: grid; place-items: center; width: 42px; height: 38px; border: 1px solid transparent; border-radius: 7px; background: transparent; font-size: 22px; cursor: pointer; }
+.flag-icon { display: block; width: 28px; height: 20px; border-radius: 2px; box-shadow: 0 0 0 1px #30353025; }
 .language-button:hover, .language-button.is-active { background: #fff; border-color: var(--line); box-shadow: 0 1px 3px #30353012; }
 .language-button:focus-visible, .menu-item:focus-visible, .page-content a:focus-visible { outline: 3px solid #8da894; outline-offset: 2px; }
 .page-layout { display: grid; grid-template-columns: 20% minmax(0, 1fr) 25%; min-height: calc(100vh - var(--header-height)); }
@@ -62,7 +63,10 @@ body { min-height: 100vh; background: var(--body); }
   .page-layout { min-height: auto; display: flex; flex-direction: column; }
   .side-menu { position: sticky; z-index: 4; top: var(--header-height); height: auto; display: block; padding: 8px 10px; border-right: 0; border-bottom: 1px solid var(--line); }
   .menu-toggle { display: flex; width: 100%; min-height: 44px; align-items: center; justify-content: space-between; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); font: inherit; font-size: 15px; font-weight: 600; text-align: left; cursor: pointer; }
+  .menu-label { display: inline-flex; align-items: center; gap: 10px; }
+  .menu-hamburger { width: 20px; height: 20px; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; }
   .menu-chevron { color: var(--accent); font-size: 20px; line-height: 1; }
+  .side-menu.is-open .menu-chevron { transform: rotate(180deg); }
   .menu-options { display: none; position: absolute; top: calc(100% - 1px); left: 10px; right: 10px; gap: 4px; padding: 7px; border: 1px solid var(--line); border-radius: 0 0 7px 7px; background: var(--menu); box-shadow: 0 8px 18px #2633261c; }
   .side-menu.is-open .menu-options { display: flex; }
   .menu-item { min-height: 44px; padding: 9px 12px; text-align: left; font-size: 14px; }
