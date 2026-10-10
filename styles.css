@@ -38,7 +38,7 @@ body { min-height: 100vh; background: var(--body); }
 .flag-icon { display: block; width: 28px; height: 20px; border-radius: 2px; box-shadow: 0 0 0 1px #30353025; }
 .language-button:hover, .language-button.is-active { background: #fff; border-color: var(--line); box-shadow: 0 1px 3px #30353012; }
 .language-button:focus-visible, .menu-item:focus-visible, .page-content a:focus-visible { outline: 3px solid #8da894; outline-offset: 2px; }
-.page-layout { display: grid; grid-template-columns: 20% minmax(0, 1fr) 25%; min-height: calc(100vh - var(--header-height)); }
+.page-layout { display: grid; grid-template-columns: 20% minmax(0, 1fr) minmax(0, calc((100vh - var(--header-height) - 58px) * 0.3 + 28px)); min-height: calc(100vh - var(--header-height)); }
 .side-menu { position: sticky; top: var(--header-height); align-self: start; height: calc(100vh - var(--header-height)); display: flex; flex-direction: column; justify-content: center; gap: clamp(8px, 1.5vh, 18px); padding: 24px clamp(12px, 2vw, 28px); background: var(--menu); border-right: 1px solid var(--line); }
 .menu-item { width: 100%; min-height: 58px; padding: 12px 15px; border: 1px solid transparent; border-radius: 7px; background: transparent; color: var(--ink); text-align: left; font: inherit; font-size: clamp(15px, 1.25vw, 18px); font-weight: 600; line-height: 1.25; cursor: pointer; }
 .menu-item:hover { background: #ffffff8c; }
