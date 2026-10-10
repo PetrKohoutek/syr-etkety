@@ -1,1 +1,1 @@
-Sbírku si můžete prohlédnout [zde](https://photos.google.com/). Návod na prohlížení ...... zveřejníme dodatečně xxxxxx
+Sbírku si můžete prohlédnout [zde](https://photos.google.com/). Návod na prohlížení ...... zveřejníme dodatečně
