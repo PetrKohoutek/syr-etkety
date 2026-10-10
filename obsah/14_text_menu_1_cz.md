@@ -1,1 +1,1 @@
-Majitelem sbírky je Václav Kohoutek, který žije v české republice, konkrétně v Pardubicích,
+Majitelem sbírky je Václav Kohoutek, sběratel, který žije v Pardubicích.
