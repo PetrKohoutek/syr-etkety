@@ -1,1 +1,1 @@
-Sbírku si můžete prohlédnout [zde](https://photos.app.goo.gl/ziVUfMuC5yi9RJCGA). Návod na prohlížení ...... zveřejníme dodatečně
+Sbírku si můžete prohlédnout [zde](https://drive.google.com/drive/folders/1h6S-70AdqYTn0CjWG5SNo5utAZYT4B7g?usp=drive_link). Sbírka je uložena na Google Drive, můžete využít všechny dostupné funkce Google Drive, vyhledávat dle textů na etiketách, nebo prohlížet jednotlivé složky.
