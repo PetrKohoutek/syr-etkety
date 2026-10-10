@@ -1,0 +1,14 @@
+{
+  "name": "Sbírka sýrových etiket",
+  "short_name": "Sýrové etikety",
+  "description": "Sbírka sýrových etiket Václava Kohoutka.",
+  "lang": "cs",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f5f0",
+  "theme_color": "#F7F6F2",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

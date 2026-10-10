@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#F7F6F2">
+    <meta name="description" content="Sbírka sýrových etiket Václava Kohoutka.">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sbírka sýrových etiket</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <img class="header-image" src="assets/01_obr_hlavicka.png" alt="Sýrové etikety ze sbírky">
+      <div class="header-titles" aria-label="Sbírka sýrových etiket — Cheese labels collection">
+        <div class="header-title header-title-cz" id="header-cz"></div>
+        <div class="header-title header-title-en" id="header-en"></div>
+      </div>
+      <div class="language-switch" aria-label="Jazyk / Language">
+        <button type="button" class="language-button is-active" data-language="cz" aria-label="Čeština" aria-pressed="true">🇨🇿</button>
+        <button type="button" class="language-button" data-language="en" aria-label="English" aria-pressed="false">🇬🇧</button>
+      </div>
+    </header>
+
+    <div class="page-layout">
+      <nav class="side-menu" id="menu" aria-label="Hlavní menu">
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu-options">
+          <span id="menu-current"></span><span class="menu-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div class="menu-options" id="menu-options"></div>
+      </nav>
+      <main class="page-content" id="content" tabindex="-1"></main>
+      <aside class="photo-strip" aria-label="Ukázky ze sbírky">
+        <img src="assets/10_obr_bok_1.png" alt="Ukázková sýrová etiketa 1">
+        <img src="assets/11_obr_bok_2.png" alt="Ukázková sýrová etiketa 2">
+        <img src="assets/12_obr_bok_3.png" alt="Ukázková sýrová etiketa 3">
+        <img src="assets/13_obr_bok_4.png" alt="Ukázková sýrová etiketa 4">
+      </aside>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+      }
+    </script>
+  </body>
+</html>
