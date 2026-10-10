@@ -1,1 +1,1 @@
-The owner of the collection lives in the Czech republic, in Pardubice.
+The owner of the collection is Václav Kohoutek, a collector living in Pardubice (Czech republic).
