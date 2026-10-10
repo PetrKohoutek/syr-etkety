@@ -1,6 +1,7 @@
-const CACHE = 'syr-etkety-pwa-v3';
+const CACHE = 'syr-etkety-pwa-v4';
 const FILES = [
   './', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon.svg',
+  './icons/icon-192.png', './icons/icon-512.png', './icons/icon-maskable-512.png', './icons/apple-touch-icon.png', './icons/favicon-32.png',
   './assets/01_obr_hlavicka.png', './assets/10_obr_bok_1.png', './assets/11_obr_bok_2.png',
   './assets/12_obr_bok_3.png', './assets/13_obr_bok_4.png',
   './obsah/02_text_hlavicka_cz.txt', './obsah/03_text_hlavicka_aj.txt',
