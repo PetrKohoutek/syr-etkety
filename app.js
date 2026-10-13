@@ -30,45 +30,7 @@
     }).join('');
   }
 
-    try {
-      if (!sessionStorage.getItem(SESSION_FLAG)) {
-        if (navigator.onLine) {
-          const hitRes = await fetchCount(true);
-          sessionStorage.setItem(SESSION_FLAG, '1');
-          if (hitRes && typeof hitRes.value !== 'undefined') {
-            visitCounter.textContent = formatNumber(hitRes.value);
-          }
-        }
-      }
-      if (navigator.onLine) {
-        const getRes = await fetchCount(false);
-        if (getRes && typeof getRes.value !== 'undefined') {
-          visitCounter.textContent = formatNumber(getRes.value);
-        }
-      }
-    } catch (err) {
-      console.warn('Visit counter error', err);
-    }
-  }
-
-  window.addEventListener('online', async () => {
-    try {
-      if (!sessionStorage.getItem(SESSION_FLAG)) {
-        const hitRes = await fetchCount(true);
-        sessionStorage.setItem(SESSION_FLAG, '1');
-        if (hitRes && typeof hitRes.value !== 'undefined') {
-          visitCounter.textContent = formatNumber(hitRes.value);
-        }
-      } else {
-        const getRes = await fetchCount(false);
-        if (getRes && typeof getRes.value !== 'undefined') {
-          visitCounter.textContent = formatNumber(getRes.value);
-        }
-      }
-    } catch (err) {
-      console.warn('Visit counter online refresh failed', err);
-    }
-  });
+   
 
   async function render() {
     menuOptions.replaceChildren();
