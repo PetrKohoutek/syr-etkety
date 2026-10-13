@@ -30,45 +30,6 @@
     }).join('');
   }
 
-  // --- Visit counter setup ---
-  const COUNTER_NAMESPACE = 'petrkohoutek-syr-etkety';
-  const COUNTER_KEY = 'visits';
-  const SESSION_FLAG = 'syr_counter_counted_v1';
-  let showCounter = true;
-
-  const visitCounter = document.createElement('div');
-  visitCounter.id = 'visit-counter';
-  visitCounter.className = 'visit-counter';
-  visitCounter.setAttribute('role', 'status');
-  visitCounter.setAttribute('aria-live', 'polite');
-  visitCounter.textContent = '—';
-  languageSwitch.appendChild(visitCounter);
-
-  function formatNumber(n) {
-    return new Intl.NumberFormat(language === 'cz' ? 'cs-CZ' : 'en-US').format(n);
-  }
-
-  async function fetchCount(hit = false) {
-    const base = 'https://api.countapi.xyz';
-    const url = hit
-      ? `${base}/hit/${encodeURIComponent(COUNTER_NAMESPACE)}/${encodeURIComponent(COUNTER_KEY)}`
-      : `${base}/get/${encodeURIComponent(COUNTER_NAMESPACE)}/${encodeURIComponent(COUNTER_KEY)}`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error('countapi response not ok');
-    return res.json();
-  }
-
-  async function initCounter() {
-    try {
-      const cfg = await readText('obsah/20_counter_on_off.txt');
-      showCounter = String(cfg).trim().toLowerCase() === 'on';
-    } catch (e) {
-      showCounter = true;
-    }
-
-    visitCounter.style.display = showCounter ? 'inline-grid' : 'none';
-    visitCounter.setAttribute('aria-label', language === 'cz' ? 'Počet přístupů' : 'Visit count');
-
     try {
       if (!sessionStorage.getItem(SESSION_FLAG)) {
         if (navigator.onLine) {
@@ -164,23 +125,11 @@
 
 Promise.all([
   readText('obsah/02_text_hlavicka_cz.txt'),
-  readText('obsah/03_text_hlavicka_aj.txt'),
-  readText('obsah/20_counter_on_off.txt').catch(() => 'on')
-]).then(async ([cz, en, cfg]) => {
+  readText('obsah/03_text_hlavicka_aj.txt')
+]).then(([cz, en]) => {
   document.querySelector('#header-cz').textContent = cz.trim();
   document.querySelector('#header-en').textContent = en.trim();
-
-  await render();
-
-  // podle obsahu souboru zapnout/vypnout zobrazení badge (off = skryto)
-  const off = String(cfg).trim().toLowerCase() === 'off';
-  const badge = document.getElementById('visitor-badge');
-  if (badge) badge.classList.toggle('hidden', off);
-
-  // skryjeme starý visit-counter pokud existuje (zabrání duplicitě)
-  const old = document.getElementById('visit-counter');
-  if (old) old.style.display = 'none';
-}).catch((error) => {
+}).then(render).catch((error) => {
   content.textContent = 'Obsah se nepodařilo načíst.';
   console.error(error);
 });
