@@ -162,17 +162,15 @@
     });
   });
 
-  Promise.all([
-    readText('obsah/02_text_hlavicka_cz.txt'),
-    readText('obsah/03_text_hlavicka_aj.txt'),
-    readText('obsah/20_counter_on_off.txt').catch(() => 'on')
-  ]).then(([cz, en]) => {
-    document.querySelector('#header-cz').textContent = cz.trim();
-    document.querySelector('#header-en').textContent = en.trim();
-  }).then(async () => {
-    await initCounter();
-  }).then(render).catch((error) => {
-    content.textContent = 'Obsah se nepodařilo načíst.';
-    console.error(error);
-  });
+Promise.all([
+  readText('obsah/02_text_hlavicka_cz.txt'),
+  readText('obsah/03_text_hlavicka_aj.txt'),
+  readText('obsah/20_counter_on_off.txt').catch(() => 'on')
+]).then(([cz, en]) => {
+  document.querySelector('#header-cz').textContent = cz.trim();
+  document.querySelector('#header-en').textContent = en.trim();
+}).then(render).catch((error) => {
+  content.textContent = 'Obsah se nepodařilo načíst.';
+  console.error(error);
+});
 })();
