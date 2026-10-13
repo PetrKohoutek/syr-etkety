@@ -96,9 +96,7 @@
     menu.setAttribute('aria-label', language === 'cz' ? 'Hlavní menu' : 'Main menu');
     document.querySelector('.photo-strip').setAttribute('aria-label', language === 'cz' ? 'Ukázky ze sbírky' : 'Collection examples');
 
-    visitCounter.setAttribute('aria-label', language === 'cz' ? 'Počet přístupů' : 'Visit count');
-    const parsed = Number(String(visitCounter.textContent).replace(/\s/g, '').replace(/[^\d]/g, ''));
-    if (!Number.isNaN(parsed)) visitCounter.textContent = formatNumber(parsed);
+
   }
 
   menuToggle.addEventListener('click', () => {
@@ -115,9 +113,6 @@
         choice.setAttribute('aria-pressed', String(selected));
       });
 
-      visitCounter.setAttribute('aria-label', language === 'cz' ? 'Počet přístupů' : 'Visit count');
-      const parsed = Number(String(visitCounter.textContent).replace(/\s/g, '').replace(/[^\d]/g, ''));
-      if (!Number.isNaN(parsed)) visitCounter.textContent = formatNumber(parsed);
 
       render();
     });
