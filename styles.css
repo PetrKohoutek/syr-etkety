@@ -115,3 +115,17 @@ body { min-height: 100vh; background: var(--body); }
     font-size: 13px;
   }
 }
+.visit-badge {
+  height: 38px;
+  min-width: 64px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-left: 8px;
+  opacity: 1;
+  transition: opacity .18s ease;
+  pointer-events: none;
+}
+
+.visit-badge.hidden {
+  opacity: 0;
+}
