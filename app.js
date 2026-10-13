@@ -166,10 +166,21 @@ Promise.all([
   readText('obsah/02_text_hlavicka_cz.txt'),
   readText('obsah/03_text_hlavicka_aj.txt'),
   readText('obsah/20_counter_on_off.txt').catch(() => 'on')
-]).then(([cz, en]) => {
+]).then(async ([cz, en, cfg]) => {
   document.querySelector('#header-cz').textContent = cz.trim();
   document.querySelector('#header-en').textContent = en.trim();
-}).then(render).catch((error) => {
+
+  await render();
+
+  // podle obsahu souboru zapnout/vypnout zobrazení badge (off = skryto)
+  const off = String(cfg).trim().toLowerCase() === 'off';
+  const badge = document.getElementById('visitor-badge');
+  if (badge) badge.classList.toggle('hidden', off);
+
+  // skryjeme starý visit-counter pokud existuje (zabrání duplicitě)
+  const old = document.getElementById('visit-counter');
+  if (old) old.style.display = 'none';
+}).catch((error) => {
   content.textContent = 'Obsah se nepodařilo načíst.';
   console.error(error);
 });
