@@ -1,6 +1,6 @@
 Sbírka vznikala po dobu šesti desítek let, první etikety pocházely z ...... Počtem etiket sbírka přesahuje 110.000 ks ze 130 zemí a jedná se tak o největší soukromou sbírku v ČR.
 
-1.** Parmigiano Reggiano (Parmezán)**
+1. **Parmigiano Reggiano (Parmezán)**
    Král tvrdých sýrů s Chráněným označením původu (PDO).
    Původ a mléko: Severní Itálie (Emilia-Romagna); nepasterované kravské mléko.
    Výroba: Míchá se večerní odstředěné a ranní plnotučné mléko. Používá se přírodní syrovátková kultura a telecí syřidlo. Sýřenina se krájí na zrníčka velikosti rýže, zahřívá na 55 °C a lisuje do typických forem.                       Následuje 20–25 dní máčení v solné lázni a zrání minimálně 12 až 36+ měsíců.
