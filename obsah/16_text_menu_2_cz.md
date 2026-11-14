@@ -1,4 +1,10 @@
-Sbírka vznikala po dobu šesti desítek let, první etikety pocházely z ...... Počtem etiket sbírka přesahuje 110.000 ks ze 130 zemí a jedná se tak o největší soukromou sbírku v ČR.
+Sbírka vznikala po dobu 60 let. První etikety pocházejí z roku 1968.
+
+Počtem etiket sbírka přesahuje 125 000 kusů ze 105 zemí celého světa. Jedná se tak o největší soukromou sbírku v České republice.
+
+Sbírka je rozdělena na jednotlivé státy a v nich na provincie, departementy, kraje a okresy (podle státního uspořádání).
+V územních celcích pak na města a jednotlivé firmy.
+
 
 1. **Parmigiano Reggiano (Parmezán)**
    Král tvrdých sýrů s Chráněným označením původu (PDO).
