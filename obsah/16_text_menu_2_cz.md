@@ -1,11 +1,12 @@
-Sbírka vznikala po dobu 60 let. První etikety pocházejí z roku 1968.
+Sbírka vznikala po dobu 60 let. První etikety byly do sbírky zařazeny v roce 1968. Jednalo se o etikety již neexistující firmy Tavírna sýrů Ronov nad Doubravou (tady bude link).
 
-Počtem etiket sbírka přesahuje 125 000 kusů ze 105 zemí celého světa. Jedná se tak o největší soukromou sbírku v České republice.
+Sýrové etikety jsou tištěny na různé materiály - papír, karton, plastové a kovové folie i dřevo (tady bude link). Velikostí se pohybují mezi malinkým trojúhelníčkem (tady bude link)) a etiketou o rozměru kulatého konferenčního stolku (tady bude link). Jsou tvarově velmi rozmanité - trojúhelníkové, čtvercové, obdélníkové, kulaté, oválné, kruhové výseče, tvaru srdce, vinného, javorového, kaštanového, dubového listu a dalších tvarů. V dnešní době se pro balení tvrdých sýrů stále více používá vakuové balení v plastových vaničkách a na měkké sýry různé kelímky (tady bude link). Příklady velikostí a tvarové rozmanitosti etiket (tady bude link "SE - každá jiná"). 
 
-Sbírka je rozdělena na jednotlivé státy a v nich na provincie, departementy, kraje a okresy (podle státního uspořádání).
-V územních celcích pak na města a jednotlivé firmy.
+Počtem etiket sbírka přesahuje 125 000 kusů ze 105 zemí celého světa. Jedná se tak o největší soukromou sbírku v České republice. Majitel svou sbírku dál rozšiřuje.
 
+Sbírka je rozdělena na jednotlivé státy a v nich na provincie, departementy, kraje a okresy (podle státního uspořádání). V územních celcích pak na města a jednotlivé firmy.
 
+Sbírka obsahuje etikety od různých druhů sýrů, například:
 1. **Parmigiano Reggiano (Parmezán)**
    Král tvrdých sýrů s Chráněným označením původu (PDO).
    Původ a mléko: Severní Itálie (Emilia-Romagna); nepasterované kravské mléko.
