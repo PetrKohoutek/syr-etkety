@@ -1,6 +1,7 @@
 # Sbírka sýrových etiket
 
-Responzivní statická PWA s českým a anglickým rozhraním. Texty a obrázky se načítají ze samostatných očíslovaných souborů, takže je lze upravovat přímo na GitHubu bez změny kódu aplikace.
+Responzivní statická PWA s českým a anglickým rozhraním. Adresa https://petrkohoutek.github.io/syr-etkety
+Texty a obrázky se načítají ze samostatných očíslovaných souborů, takže je lze upravovat přímo na GitHubu bez změny kódu aplikace.
 
 ## Obsah, který lze upravovat
 
